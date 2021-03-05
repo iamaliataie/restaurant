@@ -1,0 +1,293 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.padding{
+    padding: 100px 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: royalblue;
+}
+a:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    background-color: royalblue;
+    color: white;
+
+}
+.btn:hover{
+    background-color: darkblue;
+    cursor: pointer;
+    color: white;
+}
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 20px;
+}
+
+/* navbar */
+.header{
+    padding: 20px 0;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+}
+.menu ul{
+    list-style-type: none;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 4%;
+}
+
+/* search */
+.search{
+    overflow: hidden;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type=search]{
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+input[type=submit]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* explore food */
+.food-boxes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.box{
+    position: relative;
+}
+.box .food-title{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 10px;
+}
+
+/* food menu */
+.food-menu{
+    background-color: lightblue;
+}
+.food-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    align-items: center;
+    grid-gap: 30px;
+    background-color: white;
+    padding: 10px;
+}
+.item a{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* social media */
+.social-media{
+    padding: 20px 0;
+}
+.social-media ul{
+    list-style-type: none;
+}
+
+.social-media ul li{
+    display: inline-block;
+}
+.frame{
+    width: 70px;
+}
+
+/* footer */
+.footer{
+    padding: 10px 0 50px 0;
+}
+
+.food-section{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.food-section input{
+    width: 90%;
+}
+.customer-section{
+    padding: 10px;
+    margin-top: 20px;
+}
+.customer-section :is(input[type="text"],input[type="email"], textarea){
+    width: 95%;
+    resize: none;
+}
+.main-content{
+    padding: 20px 0;
+    background-color: lightgray;
+    min-height: 70vh;
+}
+
+.form{
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+}
+.form input[type="text"],input[type="password"]{
+    display: block;
+}
+.form input[type="submit"]{
+    font-size: 1rem;
+}
+
+.pad{
+    padding:10px;
+}
+
+.radius{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+label{
+    display: block;
+}
+
+.btn-update{
+    background-color: green;
+    padding: 10px;
+    color: white;
+}
+.btn-update:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.success{
+    display: inline-block;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.failed{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.centerone{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width:767px){
+    
+    .food-boxes{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    
+    .food-items{
+        grid-template-columns: repeat(1,1fr);
+    }   
+}
+
+@media screen and (max-width:500px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+    
+    .food-boxes{
+
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    
+    .food-items{
+        grid-template-columns: repeat(1,1fr);
+    }   
+
+    .item{
+        grid-template-columns: 2fr 3fr;
+    }
+}

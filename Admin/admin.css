@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+    
+.text-center{
+    text-align: center;
+}
+
+.title{
+    margin-bottom:10px ;
+}
+
+.btn-add{
+    background-color: royalblue;
+    padding: 10px;
+    color: white;
+}
+.btn-add:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.btn-update{
+    background-color: green;
+    padding: 10px;
+    color: white;
+}
+.btn-update:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.btn-danger{
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+.btn-danger:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+.pad{
+    padding:10px;
+}
+.radius{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.success{
+    display: inline-block;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.failed{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.category-type{
+    display: inline-block;
+    color: white;
+    background-color: royalblue;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.colored-row{
+    background-color: rgb(165, 165, 165);
+}
+
+.nothing-to-show{
+    color: red;
+    font-size: bold;
+}
+.img-responsive{
+    width: 100%;
+}
+
+.centerone{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header{
+    padding: 2%;
+    border-bottom: 1px solid darkblue;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: inline;
+    padding: 10px;
+    color: royalblue;
+}
+.menu ul li a:hover{
+    color: darkblue;
+}
+
+.main-content{
+    padding: 20px 0;
+    background-color: lightgray;
+    min-height: 70vh;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+.item{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* footer */
+.footer{
+    padding: 20px 0;
+    background: royalblue;
+}
+.footer-description{
+    color: white;
+}
+.footer-description a{
+    color:yellow;
+}
+
+
+/* main-content */
+
+.tbl{
+    border: 1px solid black;
+}
+.full-width{
+    width: 100%;
+}
+
+.full-width tr th{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.full-width tr td{
+    padding: 15px;
+}
+.full-width tr:hover td{
+    background-color: lightyellow;
+}
+
+.add-button{
+    margin: 30px 0;
+}
+
+.form{
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+}
+.form input[type="text"],input[type="password"]{
+    display: block;
+}
+.form input[type="submit"]{
+    font-size: 1rem;
+}
+
+.form label{
+    margin: 10px 0;
+    display: block;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+.card-img{
+    margin-bottom: 20px;
+}
+.card-item{
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.settings{
+    margin-top: 20px;
+}
+
+.login-content{
+    height: 100vh;
+    background-color: gray;
+}
+.sub-content{
+    
+    width: 40%;
+    padding: 40px;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.sub-content .form {
+    width: 80%;
+
+}
+.sub-content .form input{
+    width: 100%;
+}
+.sub-content .form input[type="submit"]{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.update-category{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+}
+
+.btn-update{
+    background-color: green !important;
+    color: white !important;
+}
+.btn-delete{
+    background-color: red !important;
+    color: white !important;
+}
+.ordered{
+    background-color: royalblue !important;
+    color: white !important;
+}
+.delivered{
+    background-color: green;
+    color: white;
+}
+
+.order-box{
+    display: grid;
+    grid-template-columns: .5fr 3fr .01fr 3fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+.order-id{
+    height: 100%;
+    position: relative;
+}
+.order-id h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ordered-food{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    margin: 0 auto;
+    width: 20%;
+    height: 100%;
+}
+.food-description{
+    display: grid;
+    grid-row-gap: 5px;
+}
+.food-description div{
+
+    padding: 5px;
+}
+.food-bill{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.food-bill div{
+
+    padding: 5px;
+}
+.customer{
+    display: grid;
+    grid-row-gap: 5px;
+}
+.customer .part1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+}
+.customer .part1 div{
+
+    padding: 5px;
+}
+
+.customer .part2 div{
+    padding: 5px;
+}
+.customer .part3{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+}
+.customer .part3 div{
+    padding: 5px;
+}
+
+.orderies{
+    margin: 20px 0;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.food-section{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.customer-section{
+    padding: 10px;
+    margin-top: 20px;
+}
+.customer-section :is(input[type="text"],input[type="email"], textarea){
+    width: 95%;
+    resize: none;
+}

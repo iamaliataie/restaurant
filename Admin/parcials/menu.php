@@ -1,0 +1,27 @@
+<?php include("../config/constrants.php");
+    include("login-check.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- navbar -->
+    <section class="header">
+        <div class="wrapper">
+                <div class="menu text-center">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="manage-admin.php">Admin</a></li>
+                        <li><a href="manage-category.php">Categories</a></li>
+                        <li><a href="manage-food.php">Food</a></li>
+                        <li><a href="manage-order.php">Order</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
