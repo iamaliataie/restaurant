@@ -10,7 +10,7 @@
 <section class="footer">
         <div class="container">
             <div class="footer-description text-center">
-                <p>Copyright &COPY; 2021 - All Rights Reserved. Designed By <a href="https://www.terabyte.af">Terabyte</a></p>
+                <p>Copyright &COPY; 2021 - All Rights Reserved. Designed By Ali Ahmad Ataie</p>
             </div>
         </div>
     </section>
